@@ -6,10 +6,11 @@ def main():
 def reverse_list(lista):
     # return lista[::-1]
     # return lista.reverse()
+    lista2 = []
     up = len(lista) - 1
     for i in range(up, -1, -1):
-        print(lista[i])
-    return lista
+        lista2.append(lista[i])
+    return lista2
 
 
 main()
