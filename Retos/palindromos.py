@@ -15,6 +15,4 @@ def es_palindromo(phrase):
     
     return phrase == phrase[::-1]
 
-
-
 main()

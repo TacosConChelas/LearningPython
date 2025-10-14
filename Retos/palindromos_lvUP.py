@@ -10,12 +10,10 @@ def main():
 
 def es_palindromo(phrase):
     
-    phrase = str(phrase).lower().strip().replace(" ", "")
+    phrase = str(phrase).lower().replace(" ", "")
 
-    # phrase = "".join(phrase.split())
+    # YA NO SE USA phrase = "".join(phrase.split()) NI .split()
     # phrase = phrase.replace(" ", "")
     return phrase == phrase[::-1]
-
-    
 
 main()
