@@ -8,6 +8,6 @@
 def main():
     calificaciones = {"ana": 5, "juan": 8, "carlos": 10, "sofia": 7}
     print(
-        {student.capitalize() : (calificaciones[student] + 5) for student in calificaciones.keys() if calificaciones[student] > 6}
+        {student.capitalize() : (calificacion + 5) for student, calificacion in calificaciones.items() if calificacion > 6}
     )
 main()
