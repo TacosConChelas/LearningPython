@@ -7,7 +7,7 @@ Tienes una lista de palabras. Crea un diccionario que contenga solo las palabras
 def main():
     vocabulario = ["Python", "entrevista", "solucion", "reto", "es", "muy", "bueno"]
     print(
-        {word.upper() : (len(word), word[0].lower()) for word in vocabulario}
+        {word.upper() : (len(word), word[0].lower()) for word in vocabulario if len(word) > 4}
     )
 main()
  
