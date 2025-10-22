@@ -1,5 +1,5 @@
 def main():
-    phrase = str(input("Enter the phrase: ")).strip()
+    phrase = str(input("Enter the phrase: ")).strip().lower()
     print(word_count(phrase))
 def word_count(phrase):
     phrase = phrase.split(" ")

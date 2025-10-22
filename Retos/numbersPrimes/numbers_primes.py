@@ -5,14 +5,11 @@ def main():
         print(primes_upto_(number))
     except: 
         print("Invalid number")
-
 def primes_upto_(number):
     return [num for num in range(1, (number + 1), 1) if is_prime(num)]
-
 def is_prime(number):
     for n in numbers_primes:
         if (number % n == 0) and n != 1:
-            # print(number)
             return False
     numbers_primes.append(number)        
     return True
