@@ -9,8 +9,9 @@ import re
 
 
 def main():
-    print(solo_letras("hola como estan"))
+    print(solo_letras("holacomoestan"))
+    print(solo_letras("hola como estan9"))
 def solo_letras(cadena: str) -> bool:
-    return bool(re.search(r"[0-9\s]", cadena)) 
+    return bool(re.fullmatch(r"^[a-zA-Z]+$", cadena)) 
 if __name__ == "__main__":
     main()
