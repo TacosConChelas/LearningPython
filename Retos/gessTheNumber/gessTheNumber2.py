@@ -1,11 +1,12 @@
 import random
 
 
-def main():                                                                      
+def main() -> None:                                                                      
     random_number = random.randint(1, 100)
+    intentos = 0
     while True:
         try:
-            number = int(input("Try to gess the random number: ").strip())
+            number = int(input(f"Intentos: {intentos} \nTry to gess the random number: ").strip())
             # print(random_number)
             if number > random_number:
                 print("Less!")
@@ -14,6 +15,10 @@ def main():
             else:
                 print("You win! Good Game!")
                 break
-        except:
+            intentos += 1
+        except ValueError:
             print("Enter a valid number")
-main()
+        except EOFError:
+            break
+if __name__ == "__main__":
+    main()
