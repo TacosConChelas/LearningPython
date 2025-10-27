@@ -1,5 +1,5 @@
 """
-Reverse a list without using .reverse() or slicing ([::-1]).
+2) Reverse a list without using .reverse() or slicing ([::-1]).
 """
 def main():
     numbers_list = [1, 3, 4, 4, 6, 7, 8, 8, 9, 8]

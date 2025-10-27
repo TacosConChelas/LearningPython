@@ -1,5 +1,5 @@
 """
-Write a function that removes duplicate elements from a list without using set().
+1) Write a function that removes duplicate elements from a list without using set().
 """
 def main():
     numbers_list = [1, 3, 4, 4, 6, 7, 8, 8, 9, 8]
