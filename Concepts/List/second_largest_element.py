@@ -4,9 +4,9 @@
 def main():
    numbers_list = [1, 3, 4, 4, 6, 7, 8, 8, 9, 8]
    numbers_list.sort()
-   for i in numbers_list[::-1]:
-      if numbers_list[i] > numbers_list[i + 1]: 
-         print(numbers_list[i])
+   for i in range(1, len(numbers_list)):
+      if numbers_list[- i] > numbers_list[- i - 1]: 
+         print(numbers_list[- i - 1])
          break 
       else: 
          continue

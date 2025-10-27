@@ -3,6 +3,6 @@
 """
 def main():
     numbers_list = [1, 3, 4, 4, 6, 7, 8, 8, 9, 8]
-    print(sum(numbers_list))    
+    print(sum(num for num in numbers_list if num % 2 == 0))    
 if __name__ == "__main__":
     main()
