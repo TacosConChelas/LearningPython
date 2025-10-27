@@ -1,5 +1,5 @@
 """
-Combine two lists by alternating elements from each one (e.g., [1,2,3] and [a,b,c] → [1,a,2,b,3,c]).
+5) Combine two lists by alternating elements from each one (e.g., [1,2,3] and [a,b,c] → [1,a,2,b,3,c]).
 """
 import numbers
 
