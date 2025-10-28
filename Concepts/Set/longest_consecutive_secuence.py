@@ -16,19 +16,20 @@ def longest_sequence() -> None:
     largest_sequense = []
     for i in range(len(unsorted_list)):
         # print(1)
-        sequence = []
+        sequence, lenght = [], 0
         num = list(unsorted_list)[i]
         if (num - 1) not in unsorted_list:
             # print(2)
             sequence.append(num)
+            lenght += 1
             while True:
                 if (num + 1) in unsorted_list:
                     num += 1
+                    lenght += 1
                     sequence.append(num)
                 else:
                     break
         # print(largest_sequense)
-        lenght = len(sequence)
         if largest_sequense == []:
             largest_sequense = lenght, sequence
         elif largest_sequense[0] < lenght:
