@@ -18,35 +18,32 @@ def main():
 
 def the_smallest_array():
     arr = [1, 2, 4, 5, 6, 11, 12, 13, 37, 38, 49, 50, 51]
-    length = len(arr)
     i = 0
     arr_set = set()
-    while i < len(arr):
-        print(i)
-        # print(1)
-        arr_set.add(arr[i])
-        while i < (len(arr) - 1):
-            print(i)
-            # print(2)
-            if (arr[i + 1] - arr[i] == 1):
-                arr_set.add(arr[i + 1])
-                i += 1
-            else:
-                i += 1
-                break
-        if length > len(arr_set):
-            length = len(arr_set)
-        
-        i += 1
-    print(f"the smallest subarray: {arr_set} and it's length: {length}")
-        
-        
+    list_of_arrs = []
+    for i in range(len(arr) - 1):
+        if (arr[i + 1] - arr[i] == 1) or (arr[i + 1] == arr[i]):
+            arr_set.add(arr[i])
+            arr_set.add(arr[i + 1])
+            print(f"1) {arr[i]} in {arr_set}")
+        else:
+            if list_of_arrs == []:
+                list_of_arrs.append(arr_set)
+                print(f"    1) {list_of_arrs}")
 
-
-    
-
-
-
+            elif len(list_of_arrs[0]) == len(arr_set): 
+                list_of_arrs.append(arr_set)
+                print(f"    2) {list_of_arrs}")
+                
+            elif len(list_of_arrs[0]) > len(arr_set):
+                list_of_arrs.clear()
+                list_of_arrs.append(arr_set)
+                print(f"    3) {list_of_arrs}")
+                
+            print(f"2) {arr[i]} in {arr_set}")
+            arr_set.clear()
+            continue
+    print(f"the smallest(s) subarray: {list_of_arrs} and it's length: {len(list_of_arrs[0])}")
 
 if __name__ == "__main__":
     main()
