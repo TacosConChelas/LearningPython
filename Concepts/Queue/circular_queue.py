@@ -6,8 +6,8 @@ class CircularQueue:
         self._buf = [None] * capacity   # búfer interno
         self._capacity = capacity
         self._head = 0                  # índice del primer elemento válido
-        self._tail = 0                  # índice donde se insertará el próximo
-        self._size = 0                  # número de elementos actuales
+        self._tail = 0                  # índice donde se insertará el próximo (el que será añadido con enqueue).
+        self._size = 0                  # número de elementos actuales (0 ≤ _size ≤ _capacity).
 
     def enqueue(self, item):
         """Inserta un elemento al final de la cola.
