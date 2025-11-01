@@ -12,8 +12,8 @@ from typing import Any
 
 
 def main():
-    list_fo_lists = [[1,2,3], [2,3,4], [2,5, 3], [2, 3, 7],[9, 1, 2, 4, 8, 3], [2, 1, 4, 3, 0]]
-    print(f"the final list is: {itersections_items(list_fo_lists)}")
+    list_of_lists = [[1,2,3], [2,3,4], [2,5, 3], [2, 3, 7],[9, 1, 2, 4, 8, 3], [2, 1, 4, 3, 0]]
+    print(f"the final list is: {itersections_items(list_of_lists)}")
 
 def itersections_items(list_of_lists : list[list]) -> list:
     final_list = set(list_of_lists[0])

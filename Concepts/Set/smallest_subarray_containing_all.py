@@ -27,11 +27,13 @@ def the_smallest_array():
             arr_set.add(arr[i + 1])
             print(f"1) {arr[i]} in {arr_set}")
         else:
+            
             if list_of_arrs == []:
                 list_of_arrs.append(arr_set)
                 print(f"    1) {list_of_arrs}")
 
-            elif len(list_of_arrs[0]) == len(arr_set): 
+            print(f"---- inside: {len(list_of_arrs[0])} outside: {len(arr_set)}----")
+            if len(list_of_arrs[0]) == len(arr_set): 
                 list_of_arrs.append(arr_set)
                 print(f"    2) {list_of_arrs}")
                 
