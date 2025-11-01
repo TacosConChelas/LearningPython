@@ -23,7 +23,9 @@ class CircularQueue:
         self._tail = (self._tail + 1) % self._capacity
         # alternativa 2 SOLO SI EL CASO REQUIERE AVANZAR 1 POSICION: 
         # self._tail = 0 if (self._tail + 1) == self._capacity else self._tail + 1 
-        
+
+        # El modulo % siempre hace que cuando tail se pase de capacility, tail se vuelva a reinciar
+
         self._size += 1
 
     def dequeue(self):
