@@ -20,15 +20,16 @@ class Queue():
         return self.queue.popleft()
     
     def is_empty(self):
-        return self.size() == 0
+        return self.__len__() == 0
 
     def peek(self):
-        if self.is_empty():
-            return None
-        return self.queue[0]
-    
-    def size(self):
+        return None if self.is_empty() else self.queue[0]
+
+    def __len__(self):
         return len(self.queue)
+
+    def __str__(self) -> str:
+        return f"Queue({list(self.queue)})"
 
 def main():
     q = Queue()
