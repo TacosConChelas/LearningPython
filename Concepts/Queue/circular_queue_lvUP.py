@@ -21,6 +21,9 @@ class CircularQueue:
             self._size -= 1                 # compensamos el decremento posterior
         self._buf[self._tail] = item
         self._tail = (self._tail + 1) % self._capacity
+        # alternativa 2 SOLO SI EL CASO REQUIERE AVANZAR 1 POSICION: 
+        # self._tail = 0 if (self._tail + 1) == self._capacity else self._tail + 1 
+        
         self._size += 1
 
     def dequeue(self):
