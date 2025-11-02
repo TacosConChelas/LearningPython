@@ -11,4 +11,4 @@
 
 ---
 
-A Repository about 
+A repository that shows my progress in learning and practicing Python. Highlighting practices, concepts learned, and small projects put into practice.
