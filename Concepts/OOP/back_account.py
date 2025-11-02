@@ -3,7 +3,7 @@
 2 - Add a get_balance() method but don’t allow external code to change _balance directly.
 3 - Add a rule: you can’t withdraw if the balance would go below 0.
 """
-class BackAccount():
+class BankAccount():
     def __init__(self) -> None:
         self._balance = float(0)
 
@@ -22,12 +22,12 @@ class BackAccount():
 
 
 def main():
-    bank_account = BackAccount()
+    bank_account = BankAccount()
     bank_account.deposit(2000)
     print(bank_account.get_balance())
     print(bank_account.withdraw(4000))
     print(bank_account.withdraw(400))
     print(bank_account.get_balance())
-    
+
 if __name__ == "__main__":
     main()
