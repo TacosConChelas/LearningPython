@@ -46,6 +46,7 @@ def main() -> None:
     manager = Manager(2000, "Manager", "Bob", 30, 5)
     developer = Developer(1500, "Developer", "Jose", 28, 6)
     intern = Intern(1000, "Intern", "Jack", 20, 2)
-    print("\n".join())
+    print("\n".join(f"{employ}" for employ in [manager, developer, intern]))
+
 if __name__ == "__main__":
     main()
