@@ -59,7 +59,7 @@ def main():
     rectangle = Rectangle(30, 15)
 
     for shape in [triangle, circle, rectangle]:
-        print(shape.__repr__())
+        print(shape)
 if __name__ == "__main__":
     main()
 
