@@ -16,8 +16,12 @@ class DatabaseConnection(ABC):
         self._connection = True
         return self.__class__.__name__ + " is connected ..."
     @abstractmethod
-    def disconnect(self):
+    def disconnect(self) -> str:
         self._connection = False
         return self.__class__.__name__ + " is disconnected ..."
+    def get_status_conecction(self) -> str:
+        return "On" if self._connection else "Off"
     def __repr__(self) -> str:
         return f"The {self.__class__.__name__}"
+class MySQLConnection(DatabaseConnection):
+    
