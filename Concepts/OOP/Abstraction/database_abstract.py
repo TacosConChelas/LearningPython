@@ -8,7 +8,7 @@ Define an abstract class DatabaseConnection with:
 from abc import ABC, abstractmethod
 
 class DatabaseConnection(ABC):
-    def __init__(self, connection : bool) -> None:
+    def __init__(self, connection : bool = False) -> None:
         super().__init__()
         self._connection = connection
     @abstractmethod
