@@ -13,32 +13,34 @@ class DatabaseConnection(ABC):
         self._connection = connection
     @abstractmethod
     def connect(self) -> str:
-        self._connection = True
-        return self.__class__.__name__ + " is connected ..."
+        pass
     @abstractmethod
     def disconnect(self) -> str:
-        self._connection = False
-        return self.__class__.__name__ + " is disconnected ..."
-    def get_status_conecction(self) -> str:
+        pass
+    def get_status_connecction(self) -> str:
         return "On" if self._connection else "Off"
     def __repr__(self) -> str:
         return (f"<---------Info---------->\n"
         f"The {self.__class__.__name__}\n"
-        f"Status: {self.get_status_conecction()}")
+        f"Status: {self.get_status_connecction()}")
 class MySQLConnection(DatabaseConnection):
     def __init__(self, connection: bool) -> None:
         super().__init__(connection)
     def connect(self) -> str:
-        return super().connect()
+        self._connection = True
+        return self.__class__.__name__ + " is connected ..."
     def disconnect(self) -> str:
-        return super().disconnect()
+        self._connection = False
+        return self.__class__.__name__ + " is disconnected ..."
 class MongoDBConnection(DatabaseConnection):
     def __init__(self, connection: bool) -> None:
         super().__init__(connection)
     def connect(self) -> str:
-        return super().connect()
+        self._connection = True
+        return self.__class__.__name__ + " is connected ..."
     def disconnect(self) -> str:
-        return super().disconnect()
+        self._connection = False
+        return self.__class__.__name__ + " is disconnected ..."
 def main() -> None:
     mysql = MySQLConnection(True)
     mongo = MongoDBConnection(False)
