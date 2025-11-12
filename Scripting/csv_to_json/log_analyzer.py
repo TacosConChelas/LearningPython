@@ -1,8 +1,9 @@
 """
 Script de análisis de logs de seguridad/honeypot.
 Permite realizar múltiples tipos de análisis sobre archivos JSON generados desde CSV.
-# Análisis completo de todos los tipos
-python Scripting/csv_to_json/log_analyzer.py Mailoney-Logs_7nov.json --all
+
+----> Análisis completo de todos los tipos
+        python Scripting/csv_to_json/log_analyzer.py Mailoney-Logs_7nov.json --all
 
 ---> Análisis específicos
         python Scripting/csv_to_json/log_analyzer.py Mailoney-Logs_7nov.json --ips
