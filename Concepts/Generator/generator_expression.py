@@ -9,7 +9,7 @@ def main():
 
 def generator_expression():
     for i in range(1, 100):
-        if (i % 2 > 0):
+        if (i % 2 > 0): 
             yield i ** 2
 if __name__ == "__main__":
     main()
