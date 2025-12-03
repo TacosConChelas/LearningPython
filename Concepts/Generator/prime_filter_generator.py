@@ -9,7 +9,9 @@ def primes(limit : int):
     if limit < 2: 
         return None
     if limit == 2:
+        # the list has one number
         yield 2
+    # the firt prime number is 2
     prime_nums = [2]
     for i in range(2, limit):
         if is_another_prime(i, prime_nums):
@@ -18,7 +20,9 @@ def primes(limit : int):
 def is_another_prime(number : int, numbers : list[int]) -> bool:
     for n in numbers:
         if number % n == 0:
+            # isn't a prime number or is a prime number already list inside 
             return False
+    # is another prime number
     return True
 if __name__ == "__main__":
     main()
