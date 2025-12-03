@@ -4,10 +4,6 @@ Build a generator averager() that, after being primed with next(g), receives
 numbers via g.send(value) and yields the current arithmetic mean after each new value. 
 Keep track of a running total and count inside the generator.
 """
-
-from functools import total_ordering
-
-
 def main():
     avr = average()
     next(avr)
@@ -18,7 +14,7 @@ def main():
   
 def average():
     total, count = 0, 0
-    average = 0
+    average = None
     while True:
         total += yield average
         count += 1
