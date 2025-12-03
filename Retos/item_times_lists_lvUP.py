@@ -34,7 +34,9 @@ def product_except_self_optimized(numbers: list[int]) -> list[int]:
 
 def main():
     array1 = [2, 4, 7, 6, 8, 9, 10, 3, 4, 1, 2]
+    
     resultado = product_except_self_optimized(array1)
+    
     
     print("Array original:", array1)
     print("Productos:", resultado)
