@@ -1,0 +1,6 @@
+[INFO] System boot started
+[WARNING] High memory usage detected
+[ERROR] Connection to DB failed
+[INFO] User admin logged in
+[ERROR] Timeout waiting for response
+[INFO] Service heartbeat OK
