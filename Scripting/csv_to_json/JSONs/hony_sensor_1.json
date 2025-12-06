@@ -1,0 +1,299 @@
+{
+    "@timestamp": [
+      "2025-12-05T15:14:08.843Z"
+    ],
+    "@version": [
+      "1"
+    ],
+    "@version.keyword": [
+      "1"
+    ],
+    "dest_ip": [
+      "148.226.8.26"
+    ],
+    "dest_ip.keyword": [
+      "148.226.8.26"
+    ],
+    "dest_port": [
+      60722
+    ],
+    "fatt_tls.ja3s": [
+      "601235b03dd0892f0fc4010af996a822"
+    ],
+    "fatt_tls.ja3s.keyword": [
+      "601235b03dd0892f0fc4010af996a822"
+    ],
+    "fatt_tls.ja3sAlgorithms": [
+      "771,0xc030,65281-0-11-16-23"
+    ],
+    "fatt_tls.ja3sAlgorithms.keyword": [
+      "771,0xc030,65281-0-11-16-23"
+    ],
+    "fatt_tls.ja3sCiphers": [
+      "0xc030"
+    ],
+    "fatt_tls.ja3sCiphers.keyword": [
+      "0xc030"
+    ],
+    "fatt_tls.ja3sExtensions": [
+      "65281-0-11-16-23"
+    ],
+    "fatt_tls.ja3sExtensions.keyword": [
+      "65281-0-11-16-23"
+    ],
+    "fatt_tls.ja3sVersion": [
+      "771"
+    ],
+    "fatt_tls.ja3sVersion.keyword": [
+      "771"
+    ],
+    "geoip.as_org": [
+      "T-Systems International GmbH"
+    ],
+    "geoip.as_org.keyword": [
+      "T-Systems International GmbH"
+    ],
+    "geoip.asn": [
+      6878
+    ],
+    "geoip.continent_code": [
+      "EU"
+    ],
+    "geoip.continent_code.keyword": [
+      "EU"
+    ],
+    "geoip.country_code2": [
+      "DE"
+    ],
+    "geoip.country_code2.keyword": [
+      "DE"
+    ],
+    "geoip.country_code3": [
+      "DE"
+    ],
+    "geoip.country_code3.keyword": [
+      "DE"
+    ],
+    "geoip.country_name": [
+      "Germany"
+    ],
+    "geoip.country_name.keyword": [
+      "Germany"
+    ],
+    "geoip.ip": [
+      "160.44.201.156"
+    ],
+    "geoip.latitude": [
+      51.3125
+    ],
+    "geoip.location": [
+      {
+        "coordinates": [
+          9.491,
+          51.2993
+        ],
+        "type": "Point"
+      }
+    ],
+    "geoip.longitude": [
+      9.4921875
+    ],
+    "geoip.timezone": [
+      "Europe/Berlin"
+    ],
+    "geoip.timezone.keyword": [
+      "Europe/Berlin"
+    ],
+    "geoip_ext.as_org": [
+      "Universidad Veracruzana"
+    ],
+    "geoip_ext.as_org.keyword": [
+      "Universidad Veracruzana"
+    ],
+    "geoip_ext.asn": [
+      7184
+    ],
+    "geoip_ext.city_name": [
+      "Xalapa"
+    ],
+    "geoip_ext.city_name.keyword": [
+      "Xalapa"
+    ],
+    "geoip_ext.continent_code": [
+      "NA"
+    ],
+    "geoip_ext.continent_code.keyword": [
+      "NA"
+    ],
+    "geoip_ext.country_code2": [
+      "MX"
+    ],
+    "geoip_ext.country_code2.keyword": [
+      "MX"
+    ],
+    "geoip_ext.country_code3": [
+      "MX"
+    ],
+    "geoip_ext.country_code3.keyword": [
+      "MX"
+    ],
+    "geoip_ext.country_name": [
+      "Mexico"
+    ],
+    "geoip_ext.country_name.keyword": [
+      "Mexico"
+    ],
+    "geoip_ext.ip": [
+      "148.226.8.26"
+    ],
+    "geoip_ext.latitude": [
+      19.5
+    ],
+    "geoip_ext.location": [
+      {
+        "coordinates": [
+          -96.9112,
+          19.5021
+        ],
+        "type": "Point"
+      }
+    ],
+    "geoip_ext.longitude": [
+      -96.9375
+    ],
+    "geoip_ext.postal_code": [
+      "91094"
+    ],
+    "geoip_ext.postal_code.keyword": [
+      "91094"
+    ],
+    "geoip_ext.region_code": [
+      "VER"
+    ],
+    "geoip_ext.region_code.keyword": [
+      "VER"
+    ],
+    "geoip_ext.region_name": [
+      "Veracruz"
+    ],
+    "geoip_ext.region_name.keyword": [
+      "Veracruz"
+    ],
+    "geoip_ext.timezone": [
+      "America/Mexico_City"
+    ],
+    "geoip_ext.timezone.keyword": [
+      "America/Mexico_City"
+    ],
+    "headers.accept_encoding": [
+      "gzip,deflate"
+    ],
+    "headers.accept_encoding.keyword": [
+      "gzip,deflate"
+    ],
+    "headers.connection": [
+      "close"
+    ],
+    "headers.connection.keyword": [
+      "close"
+    ],
+    "headers.content_length": [
+      "1187"
+    ],
+    "headers.content_length.keyword": [
+      "1187"
+    ],
+    "headers.content_type": [
+      "application/json"
+    ],
+    "headers.content_type.keyword": [
+      "application/json"
+    ],
+    "headers.http_host": [
+      "logstash:64305"
+    ],
+    "headers.http_host.keyword": [
+      "logstash:64305"
+    ],
+    "headers.http_user_agent": [
+      "Manticore 0.9.1"
+    ],
+    "headers.http_user_agent.keyword": [
+      "Manticore 0.9.1"
+    ],
+    "headers.http_version": [
+      "HTTP/1.0"
+    ],
+    "headers.http_version.keyword": [
+      "HTTP/1.0"
+    ],
+    "headers.request_method": [
+      "POST"
+    ],
+    "headers.request_method.keyword": [
+      "POST"
+    ],
+    "headers.request_path": [
+      "/"
+    ],
+    "headers.request_path.keyword": [
+      "/"
+    ],
+    "host": [
+      "172.18.0.5"
+    ],
+    "host.keyword": [
+      "172.18.0.5"
+    ],
+    "path": [
+      "/data/fatt/log/fatt.log"
+    ],
+    "path.keyword": [
+      "/data/fatt/log/fatt.log"
+    ],
+    "protocol": [
+      "tls"
+    ],
+    "protocol.keyword": [
+      "tls"
+    ],
+    "src_ip": [
+      "160.44.201.156"
+    ],
+    "src_ip.keyword": [
+      "160.44.201.156"
+    ],
+    "src_port": [
+      443
+    ],
+    "t-pot_hostname": [
+      "tpotsensor1"
+    ],
+    "t-pot_hostname.keyword": [
+      "tpotsensor1"
+    ],
+    "t-pot_ip_ext": [
+      "148.226.8.26"
+    ],
+    "t-pot_ip_ext.keyword": [
+      "148.226.8.26"
+    ],
+    "t-pot_ip_int": [
+      "148.226.8.26"
+    ],
+    "t-pot_ip_int.keyword": [
+      "148.226.8.26"
+    ],
+    "timestamp": [
+      "2025-12-05T15:14:08.843Z"
+    ],
+    "type": [
+      "Fatt"
+    ],
+    "type.keyword": [
+      "Fatt"
+    ],
+    "_id": "ZgMT75oBrdL5_xL45HfI",
+    "_index": "logstash-2025.12.05",
+    "_score": null
+  }
