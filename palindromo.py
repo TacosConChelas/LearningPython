@@ -8,7 +8,6 @@ def main():
     else:
         print("No es un palindromo!")
 
-
 def volvear(phrase):
     phrase_new = ""
     c = len(phrase) - 1

@@ -17,4 +17,6 @@ def reverse1(phrase):
 # def revese2(phrase):
 
 
-main()
+
+if __main__ == "__main__":
+    main()
