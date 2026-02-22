@@ -25,7 +25,6 @@ def guess_the_word(random_choose="") -> None:
         except ValueError:
             print("Enter a valid letter")
     print('You win!')
-    return
 
 
 if __name__ == "__main__":
