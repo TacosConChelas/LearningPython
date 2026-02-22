@@ -1,6 +1,6 @@
 def main():
     phrase = str(input("Enter your phrase: "))
-
+    
     phrase_new = volvear(phrase)
 
     if (phrase == phrase_new):
@@ -8,7 +8,7 @@ def main():
     else:
         print("No es un palindromo!")
 
-def volvear(phrase):
+def volvear(phrase): 
     phrase_new = ""
     c = len(phrase) - 1
     while c >= 0:
@@ -16,5 +16,4 @@ def volvear(phrase):
         c -= 1
 
     return phrase_new
-
 main()
