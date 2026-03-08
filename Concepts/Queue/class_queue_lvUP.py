@@ -31,6 +31,9 @@ class Queue():
     def __str__(self) -> str:
         return f"Queue({list(self.queue)})"
 
+def welcome(name : str) -> str:
+    return f'Welcome my frend {name}'
+
 def main():
     q = Queue()
     print(q.is_empty())

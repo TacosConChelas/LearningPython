@@ -20,5 +20,8 @@ def get_artworks(query, limit):
     content = response.json()
     return [artwork["title"] for artwork in content["data"]]
 
+def show_text(phrase : str) -> None:
+    print('Este es la bienvenidaa de mi archivo jajaj')
+
 if __name__ == "__main__":
     main()
